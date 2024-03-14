@@ -97,7 +97,7 @@ if __name__ == "__main__":
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
     # # read mart tables
-    table_dict = {table_name: pd.read_csv(f'src/data_3/{table_name}.csv') for table_name in table_names}
+    table_dict = {table_name: pd.read_parquet(f'src/data_3/{table_name}.parquet') for table_name in table_names}
 
     table_dict['mts_daily_orders_customers_sales_revenue']['AOV'] = (table_dict['mts_daily_orders_customers_sales_revenue']['Revenue']
                                                                      /table_dict['mts_daily_orders_customers_sales_revenue']['Total_Orders'])
