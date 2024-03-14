@@ -6,7 +6,7 @@ import datetime
 
 from dateutil.relativedelta import relativedelta
 from plotly.subplots import make_subplots
-from google.cloud.bigquery.client import Client
+# from google.cloud.bigquery.client import Client
 
 from src.charts.tile import header_left
 # from src.charts.charts import horizontal_bar_chart_with_value, trend_comparison_line_chart, trend_comparison_line_chart_aov, grouped_bar_chart_with_line_chart_2, bar_chart_with_line_chart, pie_chart, pie_chart_2, grouped_bar_chart, grouped_bar_chart_groupby, get_trendline_charts
